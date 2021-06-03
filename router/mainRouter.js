@@ -3,12 +3,7 @@ const router = express.Router();
 
 //get = url
 router.get("/",function(req,res){
-  
-    let page = req.query;
-    console.log("[QUERY]")
-    console.log(page)
-
-    res.send({'Key' : 'value'});
+   res.render('index',{title:"EJS 메인페이지"})//그림파일 전송, res.send = 글
 })
 
 router.get("/about", function(req,res){
